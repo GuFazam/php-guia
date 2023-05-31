@@ -61,4 +61,10 @@
     unset($carros[1]); //essa linha está delete um item do array
     print_r($carros);
     echo "<br>";
+    sort($carros); //essa linha está ordenando o array de forma crescente e alfabética
+    print_r($carros);
+    echo "<br>";
+    foreach($carros as $carro){ //foreach é um laço de repetição(para cada valor do array ele recebe um valor) está sendo usado para exibir os itens do array
+        echo $carro . "<br>";
+    }
 ?>
