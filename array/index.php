@@ -51,4 +51,14 @@
     echo "<br>";
     $carros[0] = "palio"; //essa linha altera o primeiro item do array
     print_r($carros);
+    echo "<br>";
+    $carros[2] = "uno"; //essa linha está inserindo um novo item
+    print_r($carros);
+    echo "<br>";
+    array_push($carros, "fiesta"); //essa também só que é mais segura
+    print_r($carros);
+    echo "<br>";
+    unset($carros[1]); //essa linha está delete um item do array
+    print_r($carros);
+    echo "<br>";
 ?>
