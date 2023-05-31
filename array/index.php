@@ -1,19 +1,54 @@
 <?php
-// Criar uma array com valores diretamente
-$nomes = ["João", "Maria", "Pedro"];
 
-// Criar uma array usando a função array()
-$idades = array("João" => 30, "Maria" => 25, "Pedro" => 35); //nesse caso => está associando o nome com a idade
+    #// Array é uma lista onde pode adicionar e procurar itens adicionados
 
-echo $nomes[0] . "<br>";  // Saída: João
-echo $idades["Maria"] . "<br>";  // Saída: 25
+    //Criando um array com o nome de futas e os valores maçã banana laaranja e morango
 
-$nomes[3] = "Ana";  // Adicionando um novo elemento com índice 3
-$idades["Ana"] = 28;  // Adicionando um novo elemento com índice "Ana"
+    #$frutas = array("maçã", "banana", "laranja", "morango");
+    // $frutas = ["maçã", "banana", "laranja", "morango"];
 
-print_r($nomes);
+    //imprimindo o array na tela
 
-foreach ($idades as $nome => $idade) {
-    echo $nome . ": " . $idade . "<br>";  // Exibindo cada item da array com seu índice
-}
+    #print_r($frutas);
+
+    //Inserindo um novo valor [abcaxi] dentro do array $frutas:
+
+    #$frutas[4] = "abacaxi";
+    #echo "<br>";
+    #print_r($frutas);
+
+    // É possivel utilizar outra forma:
+    //  array_push($frutas, "Abacaxi");
+
+    //Alterando o valor abacaxi[4] por uva
+    #$frutas[4] = "uva";
+    #echo "<br>";
+    #print_r($frutas);
+
+    //removendo array valor maça
+
+    #unset ($frutas[0]);
+    #echo "<br>";
+    #print_r($frutas);
+
+
+    // ordenação do array
+    #sort($frutas);
+    #echo "<br>";
+    #print_r($frutas);
+
+    // utilizando o laço de repetição para exibir todos os items da array $frutas
+    #echo "<br>";
+    #foreach($frutas as $fruta){
+    #    echo $fruta . "<br>";
+    #}
+
+    $carros = array("gol", "onix"); //essa linha cria o array
+    // $carros = ["gol", "onix"]; //outra forma de criar o arry
+    print_r($carros); //mostra literalmente a estrutura do array e tudo dentro dela
+    echo "<br>";
+    echo $carros[0]; //exibe um item do array
+    echo "<br>";
+    $carros[0] = "palio"; //essa linha altera o primeiro item do array
+    print_r($carros);
 ?>
